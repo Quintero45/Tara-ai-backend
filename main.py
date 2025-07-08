@@ -6,7 +6,7 @@ from transformers import pipeline
 app = FastAPI()
 
 # Carga el modelo (usando CPU)
-generator = pipeline("text2text-generation", model="google/flan-t5-small")
+generator = pipeline("text2text-generation", model="sshleifer/tiny-t5")
 
 # Modelo para recibir datos por POST
 class PromptRequest(BaseModel):
